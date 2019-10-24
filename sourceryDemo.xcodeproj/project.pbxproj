@@ -14,6 +14,7 @@
 		5A8AA56C23614801000D57C7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5A8AA56A23614801000D57C7 /* LaunchScreen.storyboard */; };
 		5A8AA57723614801000D57C7 /* sourceryDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AA57623614801000D57C7 /* sourceryDemoTests.swift */; };
 		5A8AA58223614802000D57C7 /* sourceryDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AA58123614802000D57C7 /* sourceryDemoUITests.swift */; };
+		5A8AA59223614CF1000D57C7 /* AutoCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5A8AA59123614CF1000D57C7 /* AutoCodable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		5A8AA57D23614802000D57C7 /* sourceryDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = sourceryDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5A8AA58123614802000D57C7 /* sourceryDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = sourceryDemoUITests.swift; sourceTree = "<group>"; };
 		5A8AA58323614802000D57C7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5A8AA59123614CF1000D57C7 /* AutoCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AutoCodable.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,6 +105,7 @@
 				5A8AA56823614801000D57C7 /* Assets.xcassets */,
 				5A8AA56A23614801000D57C7 /* LaunchScreen.storyboard */,
 				5A8AA56D23614801000D57C7 /* Info.plist */,
+				5A8AA59123614CF1000D57C7 /* AutoCodable.swift */,
 			);
 			path = sourceryDemo;
 			sourceTree = "<group>";
@@ -135,6 +138,7 @@
 				5A8AA55A236147FF000D57C7 /* Sources */,
 				5A8AA55B236147FF000D57C7 /* Frameworks */,
 				5A8AA55C236147FF000D57C7 /* Resources */,
+				5A8AA58F236148E3000D57C7 /* sourcery  */,
 			);
 			buildRules = (
 			);
@@ -251,6 +255,27 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		5A8AA58F236148E3000D57C7 /* sourcery  */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "sourcery ";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Sourcery/sourcery --sources ./sourceryDemo --templates ./Sourcery/Templates/ --output ./sourceryDemo/Generated\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5A8AA55A236147FF000D57C7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -258,6 +283,7 @@
 			files = (
 				5A8AA564236147FF000D57C7 /* ViewController.swift in Sources */,
 				5A8AA562236147FF000D57C7 /* AppDelegate.swift in Sources */,
+				5A8AA59223614CF1000D57C7 /* AutoCodable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
